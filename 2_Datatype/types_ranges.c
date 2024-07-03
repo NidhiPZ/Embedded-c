@@ -25,7 +25,7 @@ int main()
     short unsigned int va4 = USHRT_MAX;
     printf("%u to %u\n",va3,va4);  // %u is for unsigned int format specifier
 
-
+    /*...signed  and Unsigned char datatype... */
     printf("\nchar range:\n");
     printf("unsigned char max: %d\n", UCHAR_MAX);
     printf(" %d to %d \n", SCHAR_MIN, SCHAR_MAX );
