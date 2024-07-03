@@ -8,8 +8,8 @@ int main()
     
 
     //display size of datatype in byte using sizeof() operator 
-    printf("%lu\n", sizeof(myInt));
-    printf("%lu\n", sizeof(myChar));
-    printf("%lu\n", sizeof(myFloat));
-    printf("%lu\n", sizeof(myDouble)); 
+    printf("%d\n", sizeof(myInt));
+    printf("%d\n", sizeof(myChar));
+    printf("%d\n", sizeof(myFloat));
+    printf("%d\n", sizeof(myDouble)); 
 }
