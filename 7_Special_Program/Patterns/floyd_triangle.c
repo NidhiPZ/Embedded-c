@@ -8,7 +8,7 @@
 
 int main() 
 { 
-	int rows, k=1; 
+	int rows, n=1; 
     printf("enter the no of rows: ");
     scanf("%d",&rows);
 
@@ -18,7 +18,7 @@ int main()
 		// second loop for printing character in each rows 
 		for (int j = 0; j <= i; j++) 
         {
-            printf("%d ", k++);   // for printing number 
+            printf("%d ", n++);   // for printing number 
 		} 
 		printf("\n"); 
 	} 
