@@ -1,9 +1,13 @@
 #include<stdio.h>
-int main()
-{
-    int i = 0;
-    for(printf("one\n"); i < 3 && printf(""); i++)
+    int main()
     {
-        printf("Hi!\n");
+        int num, i;
+        printf("enter the num");
+        scanf("%d",&num);
+        //while(num>=0)
+        do
+        {
+            printf(" %d",num);
+            num--;
+        } while(num>=0);
     }
-}
