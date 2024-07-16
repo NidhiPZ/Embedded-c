@@ -5,7 +5,7 @@ int main()
     printf("enter the size of array: ");
     scanf("%d",&size);
     int arr[size];
-    int i,j,pos,new;
+    int i,j,index,new;
 
     printf("enter the element of array:");
     for(i=0; i<size; i++)
@@ -19,21 +19,21 @@ int main()
      {
           printf("%d ",arr[i]);
      }
-    printf("\nAdd at pos: ");
-    scanf("%d", &pos);
+    printf("\nAdd at index: ");
+    scanf("%d", &index);
     
     printf("Add new number: ");
     scanf("%d", &new);
 
-    for(i =size; i>=pos; i--)
+    for(i =size; i>=index; i--)
     {
         arr[i] =arr[i-1];    
     }
-    arr[pos-1]= new;
+    arr[index]= new;
     size++;
    
    
-    printf("after adding : \n" );
+    printf("after adding size of array : %d \n",size );
     for(i=0; i<size; i++)
      {
         printf("%d ",arr[i]);

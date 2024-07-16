@@ -5,7 +5,7 @@ int main()
     printf("enter the size of array: ");
     scanf("%d",&size);
     int arr[size];
-    int i,j,pos,temp;
+    int i,j,index,temp;
 
     printf("enter the element of array:");
     for(i=0; i<size; i++)
@@ -20,16 +20,17 @@ int main()
           printf("%d ",arr[i]);
      }
     printf("\ndelete at index: ");
-    scanf("%d", &pos);
+    scanf("%d", &index);
 
-    for(i =pos; i<size; i++)
+    for(i =index; i<size; i++)
     {
         arr[i] =arr[i+1];    
     }
     size--;
    
    
-    printf("after deleting: \n" );
+    printf("after deleting size of array : %d \n",size );
+   
     for(i=0; i<size; i++)
      {
         printf("%d ",arr[i]);
