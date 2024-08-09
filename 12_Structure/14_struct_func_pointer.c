@@ -1,5 +1,5 @@
+//structure containing function pointers
 #include <stdio.h>
-// Define the structure containing function pointers
 typedef struct 
 {
     void (*func1)(int); 
