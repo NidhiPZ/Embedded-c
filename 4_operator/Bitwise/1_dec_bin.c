@@ -1,23 +1,27 @@
-#include <stdio.h>
-
-int main() 
+#include<stdio.h>
+int main()
 {
-    int num, i;
-    int bin[50];
-    printf("enter the num: ");
-    scanf("%d",&num);
+    int num;
+    int size = sizeof(num) * 4;  //its take 32  bit
+    printf("enter the hex value: ");
+    scanf("%x",&num);
     
-    for (i=0; num>0; i++)
+    int cnt_0 =0; 
+    int cnt_1 = 0;
+    // for the binary number print
+    printf("binary form is:");
+    for(int i = size - 1; i>=0; i--)
     {
-        bin[i] = num%2;
-        num=num/2;
+        int bit = (num >> i ) & 1;
+        printf("%d",bit);
+        
+        if(bit==1)
+            cnt_1++;
+        else
+            cnt_0++;
     }
-
-    printf(" binary is: ");
-    for(i=i-1; i>=0; i--)
-    {
-        printf("%d",bin[i]);
+    printf("\ndecimal equivalant is : %d",num);
+    printf("\nnumber of 1's  is: %d",cnt_1);
+    printf("\nnumber of 0's is: %d",cnt_0);
     }
-
-    return 0;
-}
+    

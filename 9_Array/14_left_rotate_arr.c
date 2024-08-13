@@ -24,12 +24,12 @@ int main()
 
     for ( j = 0; j < pos; j++)
     {
-        temp = arr[0];
-        for(i=0; i<N-1; i++)
+        temp = arr[0]; // Save the first element
+        for (i = 0; i < N-1; i++) 
         {
-           arr[i] = arr[i+1];
+            arr[i] = arr[i+1]; // Shift elements left
         }
-        arr[i] = temp;
+        arr[i] = temp; // Move the saved element to the end
     }
     printf("after left shifting :\n");
     for(i=0; i<N; i++)

@@ -14,7 +14,7 @@ void min_max(int a[], int len, int *min, int *max)
 }
 int main()
 {
-    int arr[] = {1,2,4,12,15,17,25,8,4,0};
+    int arr[] = {1,2,4,12,15,17,25,8,4};
     int min, max, len;
     len = sizeof (arr) / sizeof arr[0];
     min_max (arr,len,&min,&max);
